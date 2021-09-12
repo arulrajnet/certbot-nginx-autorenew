@@ -21,7 +21,7 @@ services:
       - ${NGINX_HTTP_PORT}:${NGINX_HTTP_PORT}
       - ${NGINX_HTTPS_PORT}:${NGINX_HTTPS_PORT}
     volumes:
-      - ./upstream.conf.template:/etc/nginx/templates/upstream.conf.template
+      - ./upstream.conf.template:/etc/nginx/templates/default.conf.template
       - ${LETSENCRYPT_DATA_PATH}/conf:/etc/letsencrypt
       - ${LETSENCRYPT_DATA_PATH}/www:/var/www/certbot
     environment:

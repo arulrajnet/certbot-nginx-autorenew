@@ -1,4 +1,3 @@
-include /nginx/conf.d/*;
 server_tokens off;
 
 upstream backend_service {
