@@ -6,7 +6,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-source ./env
+source .env
 
 domains=(${NGINX_HOST})
 rsa_key_size=4096
